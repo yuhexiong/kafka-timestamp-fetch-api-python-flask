@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 app = Flask(__name__)
 
 @app.route('/kafka/fetch', methods=['POST'])
-def kafka():
+def fetch_kafka():
     # 從請求體中獲取 JSON 數據
     data = request.get_json()
 
