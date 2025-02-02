@@ -1,27 +1,24 @@
 # Kafka Timestamp Fetch API
 
-**(also provided Traditional Chinese version document [README-CH.md](README-CH.md).)**
-
-Provides an API to fetch messages from Kafka based on a specified timestamp range.
+提供一個 API，根據指定的時間範圍從 Kafka 獲取訊息。
 
 ## Overview
 
-- Language: Python v3.12
-- Web Framework: Flask v2.2.5
-- Kafka Tool: kafka-python-ng v2.0.3
+- 語言：Python v3.12  
+- Web 框架：Flask v2.2.5  
+- Kafka 工具：kafka-python-ng v2.0.3  
 
 ## Run
 
 ```bash
 python app.py
 ```
-The Flask service will be available at `localhost:5000`.  
-
+Flask 服務將會運行於 `localhost:5000`。  
 
 ## API
 - POST /kafka/fetch
 
-Example request:
+範例請求：
 ```json
 {
     "bootstrap_servers": "localhost:9092",
@@ -31,7 +28,7 @@ Example request:
 }
 ```
 
-Example response:
+範例回應：
 ```json
 {
     "data": [
